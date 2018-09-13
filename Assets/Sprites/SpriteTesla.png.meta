@@ -1,0 +1,477 @@
+fileFormatVersion: 2
+guid: 1b65e11bd19a464428ccc7802e5b13d2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteTesla_0
+    21300002: SpriteTesla_1
+    21300004: SpriteTesla_2
+    21300006: SpriteTesla_3
+    21300008: SpriteTesla_4
+    21300010: SpriteTesla_5
+    21300012: SpriteTesla_6
+    21300014: SpriteTesla_7
+    21300016: SpriteTesla_8
+    21300018: SpriteTesla_9
+    21300020: SpriteTesla_10
+    21300022: SpriteTesla_11
+    21300024: SpriteTesla_12
+    21300026: SpriteTesla_13
+    21300028: SpriteTesla_14
+    21300030: SpriteTesla_15
+    21300032: SpriteTesla_16
+    21300034: SpriteTesla_17
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteTesla_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 721
+        width: 60
+        height: 217
+      alignment: 9
+      pivot: {x: 0.3443585, y: 0.5172139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8539b67d80136534b80bdf6d90d9ee03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 720
+        width: 87
+        height: 215
+      alignment: 9
+      pivot: {x: 0.3067897, y: 0.5434349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a798ade5a4595d1458e36fbd3e3c9bd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 721
+        width: 68
+        height: 221
+      alignment: 9
+      pivot: {x: 0.4176012, y: 0.550707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd70b14154ea7443bd69497ac529685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_3
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 720
+        width: 61
+        height: 223
+      alignment: 9
+      pivot: {x: 0.37752846, y: 0.5502522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d130ba8f77c24bc48bafb634172ed3ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_4
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 721
+        width: 91
+        height: 217
+      alignment: 9
+      pivot: {x: 0.4179037, y: 0.525821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e40f78b4b71414096818d5c0335979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_5
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 718
+        width: 78
+        height: 220
+      alignment: 9
+      pivot: {x: 0.42816633, y: 0.54244775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda2382b5cf04694885ad13bd20a5bfa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_6
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 722
+        width: 68
+        height: 220
+      alignment: 9
+      pivot: {x: 0.3626691, y: 0.54244775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf4ca876cf78574388e433910cae9ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 362
+        width: 88
+        height: 219
+      alignment: 9
+      pivot: {x: 0.24531399, y: 0.5596981}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0effd6e0e06ce314f944eeefcb5d3737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_8
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 361
+        width: 89
+        height: 219
+      alignment: 9
+      pivot: {x: 0.35310277, y: 0.5767549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431d5ef7c01da984b8016237425350b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 361
+        width: 115
+        height: 230
+      alignment: 9
+      pivot: {x: 0.25638747, y: 0.5893247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89a72cd9c175e141b50fc2efc410011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_10
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 359
+        width: 89
+        height: 219
+      alignment: 9
+      pivot: {x: 0.3740879, y: 0.5426417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0518f672c45ae04a84d84008b80e460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_11
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 361
+        width: 129
+        height: 215
+      alignment: 9
+      pivot: {x: 0.39865232, y: 0.5868699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a188de2407964f48bdd2a7b66f277fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_12
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 360
+        width: 115
+        height: 225
+      alignment: 9
+      pivot: {x: 0.4675187, y: 0.5830089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3853c9c1abba5cd478df9c44a04af764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_13
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 372
+        width: 87
+        height: 227
+      alignment: 9
+      pivot: {x: 0.41412845, y: 0.5658221}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba26c372d853251489397edc2d84f1ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_14
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 360
+        width: 89
+        height: 230
+      alignment: 9
+      pivot: {x: 0.31113118, y: 0.58932495}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b91472e74bb2984abe3cd7f975fc8d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 91
+        height: 218
+      alignment: 9
+      pivot: {x: 0.29475853, y: 0.577107}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2aab520ef833a46829a9fb3edb208e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 118
+        height: 198
+      alignment: 9
+      pivot: {x: 0.3733765, y: 0.61319387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38ade534ebf7424d9b693608fea20e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteTesla_17
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 224
+        height: 58
+      alignment: 9
+      pivot: {x: 0.4416346, y: 0.40339595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984343be1778a394abedc0a24750318f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 30bf9cf6becd5d14c99dbfac6d357f77
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
