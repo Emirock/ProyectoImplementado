@@ -8,30 +8,37 @@ public class Mover : MonoBehaviour {
 	void Start () {
         
     }
-	
-	// Update is called once per frame
-	void Update () {
+   
+   
+    // Update is called once per frame
+    void Update () {
         
         //Caminar y salto
         if (Input.GetKey(KeyCode.RightArrow)) {
-
-              GetComponent<Animator>().SetBool("Caminando", true);
-                transform.Translate(0.07f, 0, 0);
+            if (GetComponent<SpriteRenderer>().flipX == true) ;
+            {
+                GetComponent<SpriteRenderer>().flipX = false;
+            }
+            GetComponent<Animator>().SetBool("Caminando", true);
+            transform.Translate(0.07f, 0, 0);
             
         }
         if (Input.GetKey(KeyCode.LeftArrow)) {
-            
-            
-                GetComponent<Animator>().SetBool("CaminandoReversa", true);
-                transform.Translate(-0.07f, 0, 0);
+            if (GetComponent<SpriteRenderer>().flipX == false) ;
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+            GetComponent<Animator>().SetBool("Caminando", true);
+            transform.Translate(-0.07f, 0, 0);
            
         }
 
         if (Input.GetKey(KeyCode.UpArrow)) {
             GetComponent<Animator>().SetBool("Salto", true);
             transform.Translate(0, 0.15f, 0);
-
         }
+
+        
 
         //************************************************************************
 
