@@ -8,6 +8,7 @@ public class MoverJ1 : MonoBehaviour {
     public bool Attack = false;
     public GameObject Enemigo;
     public GameObject SpecialAttack;
+    public GameObject Particulas;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
     // Use this for initialization
@@ -134,6 +135,13 @@ public class MoverJ1 : MonoBehaviour {
             GetComponent<Animator>().SetBool("GolpeMedio", false);
             GetComponent<Animator>().SetBool("Patada", false);
 
+        }
+        else if (collision.tag.Equals("SpecialAlbert"))
+        {
+            vida -= 15.0f;
+            GetComponent<Animator>().SetTrigger("Daño");
+            Destroy(collision.gameObject);
+            Instantiate(Particulas, transform.position, Quaternion.identity);
         }
     }
 

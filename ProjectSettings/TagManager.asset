@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemigo
   - SpecialTesla
+  - SpecialAlbert
   layers:
   - Default
   - TransparentFX

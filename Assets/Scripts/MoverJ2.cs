@@ -7,9 +7,12 @@ public class MoverJ2 : MonoBehaviour {
     public string TagEnemigo = "Player";
     public bool Attack = false;
     public GameObject Enemigo;
+    public GameObject SpecialAttack;
     public GameObject Particulas;
-	// Use this for initialization
-	void Start () {
+    private bool IsRight = false;
+    private bool CanDoSpecial = true;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -81,8 +84,38 @@ public class MoverJ2 : MonoBehaviour {
             GetComponent<Animator>().SetBool("Patada", false);
             
         }
-        
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (CanDoSpecial)
+            {
+
+                CanDoSpecial = false;
+
+                Invoke("ResetSpecial", 3);
+
+                if (IsRight)
+                {
+                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 3.7f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                }
+                else
+                {
+                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 6.3f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                    go.SendMessage("ChangeSide");
+                }
+
+            }
+
+
+
+
+        }
+
     }
+    public void ResetSpecial()
+    {
+        CanDoSpecial = true;
+    }
+
 
     //*****************************************************************************
 

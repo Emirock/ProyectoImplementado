@@ -495,6 +495,7 @@ MonoBehaviour:
   Enemigo: {fileID: 2020347620}
   SpecialAttack: {fileID: 1929450073458196, guid: 7326824f48c923e4aba73229b7d089e2,
     type: 2}
+  Particulas: {fileID: 1105475313512680, guid: 7abcf5d28a9c27c48817ae9820e5b7a5, type: 2}
 --- !u!1 &547680004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1252,8 @@ MonoBehaviour:
   TagEnemigo: Player
   Attack: 0
   Enemigo: {fileID: 533480236}
+  SpecialAttack: {fileID: 1238501548550890, guid: 334c959e1c4f26a44b1c97c547e86c2d,
+    type: 2}
   Particulas: {fileID: 1105475313512680, guid: 7abcf5d28a9c27c48817ae9820e5b7a5, type: 2}
 --- !u!50 &2020347627
 Rigidbody2D:
