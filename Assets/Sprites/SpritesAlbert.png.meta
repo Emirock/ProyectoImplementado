@@ -1,0 +1,477 @@
+fileFormatVersion: 2
+guid: 578017fbba07c834d88799bb00dcbd42
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpritesAlbert_0
+    21300002: SpritesAlbert_1
+    21300004: SpritesAlbert_2
+    21300006: SpritesAlbert_3
+    21300008: SpritesAlbert_4
+    21300010: SpritesAlbert_5
+    21300012: SpritesAlbert_6
+    21300014: SpritesAlbert_7
+    21300016: SpritesAlbert_8
+    21300018: SpritesAlbert_9
+    21300020: SpritesAlbert_10
+    21300022: SpritesAlbert_11
+    21300024: SpritesAlbert_12
+    21300026: SpritesAlbert_13
+    21300028: SpritesAlbert_14
+    21300030: SpritesAlbert_15
+    21300032: SpritesAlbert_16
+    21300034: SpritesAlbert_17
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpritesAlbert_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 715
+        width: 58
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a018668880dab49b95ff5601532287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 715
+        width: 114
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92a0006c27bc7540bd4935a0af63d2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 712
+        width: 95
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401666ec42864fa4786153e4fa06816d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_3
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 712
+        width: 62
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb23419e80d8ed48845624c67c6e6ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_4
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 705
+        width: 85
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d216754e334994e43b235c3aa6763c9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_5
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 711
+        width: 74
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aae966ed0e1ea49bd25054340b3dba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 705
+        width: 62
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5737d25951722c64c8fc9d608825a228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 360
+        width: 78
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b48bd431aefcd544af7c9b7e6a5f8f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_8
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 353
+        width: 99
+        height: 221
+      alignment: 9
+      pivot: {x: 0.34463686, y: 0.5471462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3104e2df680df648bca8877bc1924fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_9
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 355
+        width: 115
+        height: 220
+      alignment: 9
+      pivot: {x: 0.3446804, y: 0.5225526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae6cbfc3726dd44087f0199513e33ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_10
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 353
+        width: 100
+        height: 223
+      alignment: 9
+      pivot: {x: 0.36107484, y: 0.5333738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cb569f83c68f040bdf6f43e5b8ea8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_11
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 355
+        width: 130
+        height: 225
+      alignment: 9
+      pivot: {x: 0.3778677, y: 0.5418978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a607f35d155d2a84e9e49fa524a7b525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_12
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 361
+        width: 99
+        height: 224
+      alignment: 9
+      pivot: {x: 0.44988212, y: 0.52214974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a166a05ca93142c40a8f3f44f011ecea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_13
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 367
+        width: 98
+        height: 222
+      alignment: 9
+      pivot: {x: 0.46962193, y: 0.5379941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4950919bce7988a4cb11e381622a64ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_14
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 363
+        width: 87
+        height: 219
+      alignment: 9
+      pivot: {x: 0.35172105, y: 0.5498423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0b6c6bc927dbf4bbb63f24e4368888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 4
+        width: 78
+        height: 215
+      alignment: 9
+      pivot: {x: 0.3282526, y: 0.5184617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869cbe4c944c652449137e9d74500a53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 6
+        width: 85
+        height: 211
+      alignment: 9
+      pivot: {x: 0.41827968, y: 0.530569}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5ad2e89ae806a439885f57afc2a47a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpritesAlbert_17
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 0
+        width: 217
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43007f36b8499b4580d23f247b5d627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 223ca254887637d4e9dd6258d350c8f7
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
