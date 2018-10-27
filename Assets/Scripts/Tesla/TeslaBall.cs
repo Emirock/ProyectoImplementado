@@ -14,7 +14,7 @@ public class TeslaBall : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //transform.Rotate(1.0f, 1.0f,1.0f);
-        transform.Translate(Time.deltaTime*1.0f*IsRight,0,0);
+        transform.Translate(Time.deltaTime*10.0f*IsRight,0,0);
 	}
 
     void ChangeSide()

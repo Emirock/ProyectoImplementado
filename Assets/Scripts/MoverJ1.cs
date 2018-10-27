@@ -37,7 +37,7 @@ public class MoverJ1 : MonoBehaviour {
         {
             IsRight = false;
 
-            if (GetComponent<SpriteRenderer>().flipX == false) ;
+            if (GetComponent<SpriteRenderer>().flipX == false) 
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
@@ -78,19 +78,14 @@ public class MoverJ1 : MonoBehaviour {
 
                 if (IsRight)
                 {
-                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 3.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 5.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
                 }
                 else
                 {
                     GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.0f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
                     go.SendMessage("ChangeSide");
                 }
-
             }
-
-            
-            
-
         }
         //*************************************************************************
 

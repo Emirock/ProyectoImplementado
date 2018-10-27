@@ -9,7 +9,7 @@ public class MoverJ2 : MonoBehaviour {
     public GameObject Enemigo;
     public GameObject SpecialAttack;
     public GameObject Particulas;
-    private bool IsRight = false;
+    private bool IsRight = true;
     private bool CanDoSpecial = true;
     // Use this for initialization
     void Start () {
@@ -22,7 +22,7 @@ public class MoverJ2 : MonoBehaviour {
         //Caminar y salto
         if (Input.GetKey(KeyCode.RightArrow))
         {
-
+            IsRight = false;
             if (GetComponent<SpriteRenderer>().flipX == false) ;
             {
                 GetComponent<SpriteRenderer>().flipX = true;
@@ -33,6 +33,7 @@ public class MoverJ2 : MonoBehaviour {
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            IsRight = true;
             if (GetComponent<SpriteRenderer>().flipX == true) ;
             {
                 GetComponent<SpriteRenderer>().flipX = false;
@@ -95,11 +96,12 @@ public class MoverJ2 : MonoBehaviour {
 
                 if (IsRight)
                 {
-                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 3.7f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 5.7f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
                 }
                 else
                 {
-                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 6.3f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 4.0f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                    
                     go.SendMessage("ChangeSide");
                 }
 
