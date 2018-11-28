@@ -1,7 +1,29 @@
 fileFormatVersion: 2
 guid: ad4f4db6f99a7dc499808521f39c311c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BarrasVidaAlbert_0
+    21300002: BarrasVidaAlbert_1
+    21300004: BarrasVidaAlbert_2
+    21300006: BarrasVidaAlbert_3
+    21300008: BarrasVidaAlbert_4
+    21300010: BarrasVidaAlbert_5
+    21300012: BarrasVidaAlbert_6
+    21300014: BarrasVidaAlbert_7
+    21300016: BarrasVidaAlbert_8
+    21300018: BarrasVidaAlbert_9
+    21300020: BarrasVidaAlbert_10
+    21300022: BarrasVidaAlbert_11
+    21300024: BarrasVidaAlbert_12
+    21300026: BarrasVidaAlbert_13
+    21300028: BarrasVidaAlbert_14
+    21300030: BarrasVidaAlbert_15
+    21300032: BarrasVidaAlbert_16
+    21300034: BarrasVidaAlbert_17
+    21300036: BarrasVidaAlbert_18
+    21300038: BarrasVidaAlbert_19
+    21300040: BarrasVidaAlbert_20
+    21300042: BarrasVidaAlbert_21
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +91,460 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 672
+        width: 782
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3599b43e56de83f41acd27ca295bbb0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_1
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 500
+        width: 177
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e38305893251b409ae23bb01f37846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 530
+        width: 782
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d57a01287bf67458d3ca75a5d1c73c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 335
+        width: 862
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48ddd6c23d4aa645b6739e988669bf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_4
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 441
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011be31679a946e4888b36a7ea09fe02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_5
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 441
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4e4bee48980e74ebec624d323555c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_6
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 440
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f973ffc168bc4144a1786fc16b99ade
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_7
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 441
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c19a03c4fc602249bf2288b7ba69fdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_8
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 473
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e997f3c175c08b4792cb0006b1407ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_9
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 473
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639b7f499f97f154a987d7ca2e3d9a80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_10
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 440
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c041fcb474cb6614da7ff099290ac71b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_11
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 441
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018029213bcd54843af6473159da5e4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_12
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 440
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee41108271236041aa0c614d280e747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_13
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 441
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a827e8ca82a3e4ca6d094c251d0334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_14
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 441
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52506a9ad0221f5448f13490ac556929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_15
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 440
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e155aff188c1a2249a71327a7103ff8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_16
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 440
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfb42ac1c5aaa44a80c6983aa569f61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_17
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 440
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d70305f2777eb4ba2769164211878f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_18
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 441
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b545f021923b8094190e3884770fb400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_19
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 441
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e57e2fc99ff3045bcf026ad2532a41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_20
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 178
+        width: 882
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da14fb2bec1f80b45b84d7eb7b899e80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarrasVidaAlbert_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 15
+        width: 868
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257c982c721de1e4bb0a02d0b79e56f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
