@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +7,7 @@ public class CountDown : MonoBehaviour
 {
     public int timeLeft = 60; //Seconds Overall
     public Text countdown; //UI Text Object
+    public string cero;
     void Start()
     {
         StartCoroutine("LoseTime");
@@ -14,7 +15,7 @@ public class CountDown : MonoBehaviour
     }
     void Update()
     {
-        countdown.text = ("" + timeLeft); //Showing the Score on the Canvas
+        countdown.text = (cero + timeLeft); //Showing the Score on the Canvas
     }
     //Simple Coroutine
     IEnumerator LoseTime()
@@ -22,6 +23,13 @@ public class CountDown : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1);
+            if (timeLeft < 11)
+            {
+                cero = "0";
+            }
+            else {
+                cero = "";
+            }
             if (timeLeft>0)
             {
                 timeLeft--;
