@@ -12,6 +12,7 @@ public class MoverJ1 : MonoBehaviour {
     public GameObject Enemigo;
     public GameObject SpecialAttack;
     public GameObject Particulas;
+    public Text Win;
     public Image HealthBar;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
@@ -139,6 +140,7 @@ public class MoverJ1 : MonoBehaviour {
         else if (collision.tag.Equals("SpecialAlbert"))
         {
             vida -= 15.0f;
+            HealthBar.transform.localScale = new Vector2(vida / hp, 1);
             GetComponent<Animator>().SetTrigger("Daño");
             Destroy(collision.gameObject);
             Instantiate(Particulas, transform.position, Quaternion.identity);
@@ -158,12 +160,10 @@ public class MoverJ1 : MonoBehaviour {
         {
             GetComponent<Animator>().SetBool("Muerto", true);
             // Hacer que muestren unk
+            Win.text ="Gana Einstein";
         }
         
     }
 
-    private void OnGUI()
-    {
-        GUI.Label(new Rect(10, 0, 100, 50), new GUIContent("Player 1: " + vida));
-    }
+    
 }
