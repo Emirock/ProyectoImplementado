@@ -34,6 +34,10 @@ public class CountDown : MonoBehaviour
             {
                 timeLeft--;
             }
+            else
+            {
+                // Si se acaba el tiempo gana quien tenga mas vida
+            }
             
         }
     }

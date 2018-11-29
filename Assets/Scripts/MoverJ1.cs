@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 
 public class MoverJ1 : MonoBehaviour {
-    public float vida = 100f, hp=100f;
+    public float vida = 100f, hp=100f, mana = 100f, mn = 100f;
     public string TagEnemigo = "Enemigo";
     public bool Attack = false;
     public GameObject Enemigo;
     public GameObject SpecialAttack;
     public GameObject Particulas;
     public Text Win;
-    public Image HealthBar;
+    public Image HealthBar, ManaBar;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
     
@@ -84,12 +84,22 @@ public class MoverJ1 : MonoBehaviour {
 
                 if (IsRight)
                 {
-                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 5.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                    if (mana > 0)
+                    {
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 5.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                        mana -= 20.0f;
+                        ManaBar.transform.localScale = new Vector2(mana / mn, 1);
+                    }
                 }
                 else
                 {
-                    GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.0f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
-                    go.SendMessage("ChangeSide");
+                    if (mana > 0)
+                    {
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.0f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                        go.SendMessage("ChangeSide");
+                        mana -= 20.0f;
+                        ManaBar.transform.localScale = new Vector2(mana / mn, 1);
+                    }
                 }
             }
         }
@@ -144,6 +154,13 @@ public class MoverJ1 : MonoBehaviour {
             GetComponent<Animator>().SetTrigger("Daño");
             Destroy(collision.gameObject);
             Instantiate(Particulas, transform.position, Quaternion.identity);
+            if (vida <= 0)
+            {
+                GetComponent<Animator>().SetBool("Muerto", true);
+                // Hacer que muestren unk
+                Win.text = "Gana Einstein";
+                transform.Translate(0, 0, 10f);
+            }
         }
     }
 
@@ -152,15 +169,18 @@ public class MoverJ1 : MonoBehaviour {
     {
         vida -= damage;
         
-        Debug.Log("Si baja daño");
-        HealthBar.transform.localScale = new Vector2(vida/hp,1);
-        Debug.Log(vida + " / " + hp);
-        GetComponent<Animator>().SetTrigger("Daño");
+        
         if (vida <= 0)
         {
             GetComponent<Animator>().SetBool("Muerto", true);
             // Hacer que muestren unk
             Win.text ="Gana Einstein";
+            transform.Translate(0, 0, 10f);
+        }
+        else
+        {
+        HealthBar.transform.localScale = new Vector2(vida/hp,1);
+        GetComponent<Animator>().SetTrigger("Daño");
         }
         
     }
