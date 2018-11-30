@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-       // DeactivateChildren(Button, false);
+        DeactivateChildren(Button, false);
 	}
 	
 	// Update is called once per frame
@@ -50,7 +50,7 @@ public class LevelManager : MonoBehaviour {
 
     
 
-    public void setParameters()
+    /*public void setParameters()
     {
         MoverJ1 j1 = new MoverJ1();
         MoverJ2 j2 = new MoverJ2();
@@ -59,6 +59,6 @@ public class LevelManager : MonoBehaviour {
         j2.setJ1(n1);
         j1.setJ2(n2);
         j2.setJ2(n2);
-    }
+    }*/
 }
 
