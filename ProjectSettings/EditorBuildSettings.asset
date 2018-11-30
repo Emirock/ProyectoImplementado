@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ElegirJugador.unity
+    guid: 1c12d3149c518b74b8b6e5db3733a0a2
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3a4c600876bb2b14a837f444c4cba381
+  - enabled: 1
+    path: Assets/Scenes/Prueba.unity
+    guid: 5dfb43b117a57aa4c934ce2891e958e9
   m_configObjects: {}

@@ -7,24 +7,58 @@ using UnityEngine.UI;
 
 public class MoverJ1 : MonoBehaviour {
     public float vida = 100f, hp=100f, mana = 100f, mn = 100f;
-    public string TagEnemigo = "Enemigo";
+    public string TagEnemigo = "Enemigo", J1, J2;
     public bool Attack = false;
-    public GameObject Enemigo;
     public GameObject SpecialAttack;
-    public GameObject Particulas;
+    public GameObject Particulas, other1, other2, other3;
     public Text Win;
     public Image HealthBar, ManaBar;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
-    
+
+    public MoverJ1()
+    {
+    } 
+
+    public void setJ1(string J1)
+    {
+        this.J1 = J1;
+    }
+
+    public void setJ2(string J2)
+    {
+        this.J2 = J2;
+    }
+
     // Use this for initialization
     void Start () {
-        hp = vida;
+        
+
+        if (J1 == "Tesla")
+        {
+            Destroy(other2,0);
+            Destroy(other3, 0);
+            // Se quitan todos los jugadores de la escena que no son J1 del lado izquierdo, se setean los sprites, 
+        }
+        else if (J1 == "Marie")
+        {
+            Destroy(other2, 0);
+            Destroy(other1, 0);
+        }
+        else if (J1 == "Einstein")
+        {
+            Destroy(other1, 0);
+            Destroy(other3, 0);
+        }
+
     }
 
     void Update()
     {
-
+        if (Win.text == "Gana "+J1)
+        {
+            GetComponent<Animator>().SetBool("Ganador", true);
+        }
         //Caminar y salto
         if (Input.GetKey(KeyCode.D))
         {
@@ -35,7 +69,7 @@ public class MoverJ1 : MonoBehaviour {
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-            GetComponent<Animator>().SetBool("Caminando", true);
+            GetComponent<Animator>().SetBool("Caminar", true);
             transform.Translate(0.07f, 0, 0);
 
         }
@@ -47,7 +81,7 @@ public class MoverJ1 : MonoBehaviour {
             {
                 GetComponent<SpriteRenderer>().flipX = true;
             }
-            GetComponent<Animator>().SetBool("Caminando", true);
+            GetComponent<Animator>().SetBool("Caminar", true);
             transform.Translate(-0.07f, 0, 0);
 
         }
@@ -86,7 +120,8 @@ public class MoverJ1 : MonoBehaviour {
                 {
                     if (mana > 0)
                     {
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 5.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                        GetComponent<Animator>().SetBool("GolpeEspecial", true);
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.7f, transform.position.y + 1.8f, 6.4f), Quaternion.identity) as GameObject;
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
                     }
@@ -95,7 +130,8 @@ public class MoverJ1 : MonoBehaviour {
                 {
                     if (mana > 0)
                     {
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.0f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                        GetComponent<Animator>().SetBool("GolpeEspecial", true);
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 2.0f, transform.position.y + 1.8f, 6.4f), Quaternion.identity) as GameObject;
                         go.SendMessage("ChangeSide");
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
@@ -103,13 +139,13 @@ public class MoverJ1 : MonoBehaviour {
                 }
             }
         }
+        
         //*************************************************************************
 
         //Desactivar animaciones
         if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
-            GetComponent<Animator>().SetBool("Caminando", false);
-            GetComponent<Animator>().SetBool("CaminandoReversa", false);
+            GetComponent<Animator>().SetBool("Caminar", false);
             GetComponent<Animator>().SetBool("Salto", false);
         }
 
@@ -122,6 +158,11 @@ public class MoverJ1 : MonoBehaviour {
         {
             GetComponent<Animator>().SetBool("Patada", false);
 
+        }
+        
+       if (Input.GetKeyUp(KeyCode.G))
+        {
+            GetComponent<Animator>().SetBool("GolpeEspecial", false);
         }
 
     }
@@ -174,7 +215,7 @@ public class MoverJ1 : MonoBehaviour {
         {
             GetComponent<Animator>().SetBool("Muerto", true);
             // Hacer que muestren unk
-            Win.text ="Gana Einstein";
+            Win.text ="Gana "+J2;
             transform.Translate(0, 0, 10f);
         }
         else
@@ -185,5 +226,4 @@ public class MoverJ1 : MonoBehaviour {
         
     }
 
-    
 }

@@ -5,8 +5,9 @@ using UnityEngine.UI;
 using System.Threading;
 public class CountDown : MonoBehaviour
 {
-    public int timeLeft = 60; //Seconds Overall
+    public int timeLeft = 60, contador; //Seconds Overall
     public Text countdown; //UI Text Object
+    public Text Win;
     public string cero;
     void Start()
     {
@@ -15,7 +16,18 @@ public class CountDown : MonoBehaviour
     }
     void Update()
     {
-        countdown.text = (cero + timeLeft); //Showing the Score on the Canvas
+        
+
+        if (Win.text != "Gana Einstein" || Win.text != "Gana Tesla")
+        {
+            countdown.text = (cero + timeLeft); //Showing the Score on the Canvas
+        }
+        else
+        {
+            string cont = contador.ToString();
+            countdown.text = (cont);
+        }
+
     }
     //Simple Coroutine
     IEnumerator LoseTime()
@@ -23,22 +35,25 @@ public class CountDown : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1);
-            if (timeLeft < 11)
-            {
-                cero = "0";
+            if (Win.text != "Gana Einstein" || Win.text != "Gana Tesla") {
+                if (timeLeft < 11)
+                {
+                    cero = "0";
+                }
+                else {
+                    cero = "";
+                }
+                if (timeLeft > 0)
+                {
+                    timeLeft--;
+                    contador = timeLeft;
+                }
+                else
+                {
+                    // Si se acaba el tiempo gana quien tenga mas vida
+                }
             }
-            else {
-                cero = "";
-            }
-            if (timeLeft>0)
-            {
-                timeLeft--;
-            }
-            else
-            {
-                // Si se acaba el tiempo gana quien tenga mas vida
-            }
-            
+           
         }
     }
 

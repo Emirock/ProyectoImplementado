@@ -5,23 +5,57 @@ using UnityEngine.UI;
 
 public class MoverJ2 : MonoBehaviour {
     public float vida = 100f, hp = 100f, mana = 100f, mn = 100f;
-    public string TagEnemigo = "Player";
+    public string TagEnemigo = "Player", J1, J2;
     public bool Attack = false;
     public GameObject Enemigo;
     public GameObject SpecialAttack;
-    public GameObject Particulas;
+    public GameObject Particulas, other1, other2, other3;
     public Text Win;
     public Image HealthBar, ManaBar;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+   
+
+    public MoverJ2() { } 
+
+    public void setJ1(string J1)
+    {
+        this.J1 = J1;
+    }
+
+    public void setJ2(string J2)
+    {
+        this.J2 = J2;
+    }
+
+ void Start() {
+        if (J2 == "Tesla")
+        {
+            Destroy(other2, 0.1f);
+            Destroy(other3, 0.1f);
+            // Se quitan todos los jugadores de la escena que no son J1 del lado izquierdo, se setean los sprites, 
+        }
+        else if (J2 == "Marie")
+        {
+            Destroy(other2, 0.1f);
+            Destroy(other1, 0.1f);
+        }
+        else if (J2 == "Einstein")
+        {
+            Destroy(other1, 0.1f);
+            Destroy(other3, 0.1f);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+        if (Win.text == "Gana "+J2)
+        {
+            GetComponent<Animator>().SetBool("Ganador", true);
+        }
+
         //Caminar y salto
         if (Input.GetKey(KeyCode.RightArrow))
         {
@@ -88,6 +122,13 @@ public class MoverJ2 : MonoBehaviour {
             GetComponent<Animator>().SetBool("Patada", false);
             
         }
+
+        if (Input.GetKeyUp(KeyCode.M))
+        {
+            GetComponent<Animator>().SetBool("GolpeEspecial", false);
+
+        }
+
         if (Input.GetKeyDown(KeyCode.M))
         {
             if (CanDoSpecial)
@@ -100,7 +141,8 @@ public class MoverJ2 : MonoBehaviour {
                 if (IsRight)
                 {
                     if (mana > 0){
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 5.7f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                        GetComponent<Animator>().SetBool("GolpeEspecial", true);
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 5.7f, transform.position.y - 0.3f, 0), Quaternion.identity) as GameObject;
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
                     }
@@ -109,7 +151,8 @@ public class MoverJ2 : MonoBehaviour {
                 else
                 {
                     if(mana > 0) {
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 4.0f, transform.position.y - 1.5f, 0), Quaternion.identity) as GameObject;
+                        GetComponent<Animator>().SetBool("GolpeEspecial", true);
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 4.0f, transform.position.y - 0.3f, 0), Quaternion.identity) as GameObject;
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
                         go.SendMessage("ChangeSide");
