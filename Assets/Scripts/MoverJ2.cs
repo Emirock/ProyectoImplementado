@@ -9,11 +9,12 @@ public class MoverJ2 : MonoBehaviour
     public int timeLeft = 100, contador; //Seconds Overall
     
     public float vida = 100f, hp = 100f, mana = 100f, mn = 100f;
-    public string TagEnemigo = "Player";
+    public string TagEnemigo = "Player", vid;
     public bool Attack = false;
     public GameObject Enemigo;
     public GameObject SpecialAttack;
     public GameObject Particulas;
+    public Text vidaT2;
     public Text Win;
     public Image HealthBar, ManaBar;
     private bool IsRight = true;
@@ -47,6 +48,8 @@ public class MoverJ2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        vid = string.Format("{0:G}", vida);
+        vidaT2.text = (vid);
         if (Win.text == "Gana Einstein")
         {
             GetComponent<Animator>().SetBool("Ganador", true);
@@ -144,7 +147,7 @@ public class MoverJ2 : MonoBehaviour
                 {
                     if (mana > 0)
                     {
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 3.7f, transform.position.y + 0.7f, 0), Quaternion.identity) as GameObject;
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x - 2f, transform.position.y + 0.7f, 0), Quaternion.identity) as GameObject;
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
                     }
@@ -219,6 +222,7 @@ public class MoverJ2 : MonoBehaviour
             GetComponent<Animator>().SetBool("Muerto", true);
             Win.text = "Gana Tesla";
             transform.Translate(0, 0, 10f);
+            HealthBar.transform.localScale = new Vector2(vida / hp, 1);
         }
         else
         {

@@ -7,7 +7,7 @@ public class CountDown : MonoBehaviour
 {
     public int timeLeft = 60, contador; //Seconds Overall
     public Text countdown; //UI Text Object
-    public Text Win;
+    public Text Win, t1, t2;
     public string cero;
     void Start()
     {
@@ -48,9 +48,13 @@ public class CountDown : MonoBehaviour
                     timeLeft--;
                     contador = timeLeft;
                 }
-                else
+                else if (timeLeft == 0)
                 {
                     // Si se acaba el tiempo gana quien tenga mas vida
+                    //float j1 = float.Parse(t1);
+                    
+
+                    
                 }
             }
            

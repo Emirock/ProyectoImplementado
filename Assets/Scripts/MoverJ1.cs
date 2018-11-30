@@ -10,12 +10,13 @@ public class MoverJ1 : MonoBehaviour
 {
     public int timeLeft = 100, contador; //Seconds Overall
     public float vida = 100f, hp = 100f, mana = 100f, mn = 100f;
-    public string TagEnemigo = "Enemigo";
+    public string TagEnemigo = "Enemigo", vid;
     public bool Attack = false;
     public GameObject Enemigo;
     public GameObject SpecialAttack;
     public GameObject Particulas;
     public Text Win;
+    public Text vidaT1;
     public Image HealthBar, ManaBar;
     private bool IsRight = true;
     private bool CanDoSpecial = true;
@@ -49,6 +50,8 @@ public class MoverJ1 : MonoBehaviour
 
     void Update()
     {
+        vid = string.Format("{0:G}", vida);
+        vidaT1.text = (vid);
         if (Win.text == "Gana Tesla")
         {
             GetComponent<Animator>().SetBool("Ganador", true);
@@ -118,7 +121,7 @@ public class MoverJ1 : MonoBehaviour
                     if (mana > 0)
                     {
                         GetComponent<Animator>().SetBool("GolpeEspecial", true);
-                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 5.7f, transform.position.y + 1.5f, 6.4f), Quaternion.identity) as GameObject;
+                        GameObject go = Instantiate(SpecialAttack, new Vector3(transform.position.x + 1.5f, transform.position.y + 0.5f, 6.4f), Quaternion.identity) as GameObject;
                         mana -= 20.0f;
                         ManaBar.transform.localScale = new Vector2(mana / mn, 1);
                     }
