@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MoverJ2 : MonoBehaviour
 {
+    public int timeLeft = 100, contador; //Seconds Overall
+    
     public float vida = 100f, hp = 100f, mana = 100f, mn = 100f;
     public string TagEnemigo = "Player";
     public bool Attack = false;
@@ -18,7 +21,27 @@ public class MoverJ2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        
+    }
 
+    IEnumerator LoseTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5);
+           
+                if (timeLeft > 0)
+                {
+                    timeLeft--;
+                    
+                }else if (timeLeft == 0)
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+                
+            
+
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +50,8 @@ public class MoverJ2 : MonoBehaviour
         if (Win.text == "Gana Einstein")
         {
             GetComponent<Animator>().SetBool("Ganador", true);
+            StartCoroutine("LoseTime");
+            Time.timeScale = 1; //Just making sure that the timeScale is right
         }
         //Caminar y salto
         if (Input.GetKey(KeyCode.RightArrow))

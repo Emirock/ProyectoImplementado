@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManagerEscenarios : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class ManagerEscenarios : MonoBehaviour {
     Random r = new Random();
     public int al;
     // Use this for initialization
+    public int timeLeft = 60, contador; //Seconds Overall
+    public Text countdown; //UI Text Object
     void Start () {
 
         System.Random randomGenerate = new System.Random();

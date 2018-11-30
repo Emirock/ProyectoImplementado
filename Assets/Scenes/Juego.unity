@@ -251,6 +251,46 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 34273096}
   m_CullTransparentMesh: 0
+--- !u!1 &68915350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68915352}
+  - component: {fileID: 68915351}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &68915351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68915350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efd7d84e5bc91e4da4dcd6e4824b0ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &68915352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68915350}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.119345, y: 1.501449, z: 6.475077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &102322045
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff6650f3bb981e4ab29e8605560adfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeLeft: 4
+  contador: 0
   vida: 100
   hp: 100
   mana: 100
@@ -1745,6 +1787,9 @@ MonoBehaviour:
   EscEinstein: {fileID: 712484895}
   EscMarie: {fileID: 1942651499}
   al: 0
+  timeLeft: 60
+  contador: 0
+  countdown: {fileID: 0}
 --- !u!1 &1570402108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,6 +2540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280239ce311a0d7439b5d48ac3ab4e79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeLeft: 4
+  contador: 0
   vida: 100
   hp: 100
   mana: 100
